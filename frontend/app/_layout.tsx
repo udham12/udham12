@@ -19,14 +19,14 @@ export default function RootLayout() {
         contentStyle: { backgroundColor: Colors.background },
         animation: 'fade',
       }}>
-        <Stack.Screen name="index" />
-        <Stack.Screen name="auth/login" />
-        <Stack.Screen name="auth/register" />
-        <Stack.Screen name="(tabs)" />
-        <Stack.Screen name="chat/[id]" />
-        <Stack.Screen name="call/[id]" />
-        <Stack.Screen name="payment" />
-        <Stack.Screen name="mood/checkin" />
+        <Stack.Screen name="index" options={{ headerShown: false }} />
+        <Stack.Screen name="auth/login" options={{ headerShown: false }} />
+        <Stack.Screen name="auth/register" options={{ headerShown: false }} />
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen name="chat/[id]" options={{ presentation: 'modal', headerShown: false }} />
+        <Stack.Screen name="call/[id]" options={{ presentation: 'fullScreenModal', headerShown: false }} />
+        <Stack.Screen name="payment" options={{ presentation: 'modal', headerShown: false }} />
+        <Stack.Screen name="mood/checkin" options={{ presentation: 'modal', headerShown: false }} />
       </Stack>
     </GestureHandlerRootView>
   );
